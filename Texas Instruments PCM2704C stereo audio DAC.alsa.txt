@@ -1,0 +1,20 @@
+BurrBrown from Texas Instruments USB AUDIO    DAC at usb-3f980000.usb-1.1.2, fu : USB Audio
+
+Playback:
+  Status: Stop
+  Interface 1
+    Altset 1
+    Format: S16_LE
+    Channels: 2
+    Endpoint: 2 OUT (ADAPTIVE)
+    Rates: 32000, 44100, 48000
+    Bits: 16
+    Channel map: FL FR
+  Interface 1
+    Altset 2
+    Format: S16_LE
+    Channels: 1
+    Endpoint: 2 OUT (ADAPTIVE)
+    Rates: 32000, 44100, 48000
+    Bits: 16
+    Channel map: MONO

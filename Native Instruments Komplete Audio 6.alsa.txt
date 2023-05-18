@@ -1,0 +1,29 @@
+Native Instruments Komplete Audio 6 at usb-3f980000.usb-1.4, high speed : USB Audio
+
+Playback:
+  Status: Stop
+  Interface 1
+    Altset 1
+    Format: S32_LE
+    Channels: 6
+    Endpoint: 0x01 (1 OUT) (ASYNC)
+    Rates: 44100, 48000, 88200, 96000
+    Data packet interval: 125 us
+    Bits: 24
+    Channel map: FL FR FC LFE RL RR
+    Sync Endpoint: 0x81 (1 IN)
+    Sync EP Interface: 1
+    Sync EP Altset: 1
+    Implicit Feedback Mode: No
+
+Capture:
+  Status: Stop
+  Interface 2
+    Altset 1
+    Format: S32_LE
+    Channels: 6
+    Endpoint: 0x82 (2 IN) (ASYNC)
+    Rates: 44100, 48000, 88200, 96000
+    Data packet interval: 125 us
+    Bits: 24
+    Channel map: FL FR FC LFE RL RR
