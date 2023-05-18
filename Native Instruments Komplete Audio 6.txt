@@ -1,0 +1,445 @@
+
+Bus 001 Device 006: ID 17cc:1001 Native Instruments Komplete Audio 6
+Device Descriptor:
+  bLength                18
+  bDescriptorType         1
+  bcdUSB               2.00
+  bDeviceClass          239 Miscellaneous Device
+  bDeviceSubClass         2 
+  bDeviceProtocol         1 Interface Association
+  bMaxPacketSize0        64
+  idVendor           0x17cc Native Instruments
+  idProduct          0x1001 Komplete Audio 6
+  bcdDevice            0.32
+  iManufacturer          12 Native Instruments
+  iProduct                7 Komplete Audio 6
+  iSerial                13 73BBFDEE
+  bNumConfigurations      1
+  Configuration Descriptor:
+    bLength                 9
+    bDescriptorType         2
+    wTotalLength       0x01c2
+    bNumInterfaces          5
+    bConfigurationValue     1
+    iConfiguration          0 
+    bmAttributes         0x80
+      (Bus Powered)
+    MaxPower              500mA
+    Interface Association:
+      bLength                 8
+      bDescriptorType        11
+      bFirstInterface         0
+      bInterfaceCount         5
+      bFunctionClass          1 Audio
+      bFunctionSubClass       0 
+      bFunctionProtocol      32 
+      iFunction               0 
+    Interface Descriptor:
+      bLength                 9
+      bDescriptorType         4
+      bInterfaceNumber        0
+      bAlternateSetting       0
+      bNumEndpoints           1
+      bInterfaceClass         1 Audio
+      bInterfaceSubClass      1 Control Device
+      bInterfaceProtocol     32 
+      iInterface              7 Komplete Audio 6
+      AudioControl Interface Descriptor:
+        bLength                 9
+        bDescriptorType        36
+        bDescriptorSubtype      1 (HEADER)
+        bcdADC               2.00
+        bCategory               8
+        wTotalLength       0x00d6
+        bmControls           0x00
+      AudioControl Interface Descriptor:
+        bLength                 8
+        bDescriptorType        36
+        bDescriptorSubtype     10 (CLOCK_SOURCE)
+        bClockID               40
+        bmAttributes            1 Internal fixed clock 
+        bmControls           0x07
+          Clock Frequency Control (read/write)
+          Clock Validity Control (read-only)
+        bAssocTerminal          0
+        iClockSource           26 Internal Clock
+      AudioControl Interface Descriptor:
+        bLength                 8
+        bDescriptorType        36
+        bDescriptorSubtype     10 (CLOCK_SOURCE)
+        bClockID               41
+        bmAttributes            0 External clock 
+        bmControls           0x05
+          Clock Frequency Control (read-only)
+          Clock Validity Control (read-only)
+        bAssocTerminal          0
+        iClockSource           27 External Clock (S/PDIF)
+      AudioControl Interface Descriptor:
+        bLength                 9
+        bDescriptorType        36
+        bDescriptorSubtype     11 (CLOCK_SELECTOR)
+        bClockID               42
+        bNrInPins               2
+        baCSourceID(0)         40
+        baCSourceID(1)         41
+        bmControls           0x03
+          Clock Selector Control (read/write)
+        iClockSelector          0 
+      AudioControl Interface Descriptor:
+        bLength                17
+        bDescriptorType        36
+        bDescriptorSubtype      2 (INPUT_TERMINAL)
+        bTerminalID             2
+        wTerminalType      0x0101 USB Streaming
+        bAssocTerminal          0
+        bCSourceID             42
+        bNrChannels             6
+        bmChannelConfig    0x00000000
+        iChannelNames          16 Main Output L
+        bmControls         0x0000
+        iTerminal               2 Input
+      AudioControl Interface Descriptor:
+        bLength                34
+        bDescriptorType        36
+        bDescriptorSubtype      6 (FEATURE_UNIT)
+        bUnitID                10
+        bSourceID               2
+        bmaControls(0)     0x00000000
+        bmaControls(1)     0x00000000
+        bmaControls(2)     0x00000000
+        bmaControls(3)     0x00000000
+        bmaControls(4)     0x00000000
+        bmaControls(5)     0x00000000
+        bmaControls(6)     0x00000000
+        iFeature               15 Output Volume Control
+      AudioControl Interface Descriptor:
+        bLength                12
+        bDescriptorType        36
+        bDescriptorSubtype      3 (OUTPUT_TERMINAL)
+        bTerminalID            20
+        wTerminalType      0x0301 Speaker
+        bAssocTerminal          0
+        bSourceID              13
+        bCSourceID             42
+        bmControls         0x0000
+        iTerminal               5 Audio Output Terminal
+      AudioControl Interface Descriptor:
+        bLength                17
+        bDescriptorType        36
+        bDescriptorSubtype      2 (INPUT_TERMINAL)
+        bTerminalID             1
+        wTerminalType      0x0201 Microphone
+        bAssocTerminal          0
+        bCSourceID             42
+        bNrChannels             6
+        bmChannelConfig    0x00000000
+        iChannelNames          28 Input 1 L
+        bmControls         0x0000
+        iTerminal               3 Audio Input Terminal
+      AudioControl Interface Descriptor:
+        bLength                34
+        bDescriptorType        36
+        bDescriptorSubtype      6 (FEATURE_UNIT)
+        bUnitID                11
+        bSourceID               1
+        bmaControls(0)     0x00000000
+        bmaControls(1)     0x00000000
+        bmaControls(2)     0x00000000
+        bmaControls(3)     0x00000000
+        bmaControls(4)     0x00000000
+        bmaControls(5)     0x00000000
+        bmaControls(6)     0x00000000
+        iFeature               14 Input Volume Control
+      AudioControl Interface Descriptor:
+        bLength                34
+        bDescriptorType        36
+        bDescriptorSubtype      6 (FEATURE_UNIT)
+        bUnitID                12
+        bSourceID               1
+        bmaControls(0)     0x00000003
+          Mute Control (read/write)
+        bmaControls(1)     0x00000003
+          Mute Control (read/write)
+        bmaControls(2)     0x00000003
+          Mute Control (read/write)
+        bmaControls(3)     0x00000003
+          Mute Control (read/write)
+        bmaControls(4)     0x00000003
+          Mute Control (read/write)
+        bmaControls(5)     0x00000000
+        bmaControls(6)     0x00000000
+        iFeature               38 Monitor Control
+      AudioControl Interface Descriptor:
+        bLength                20
+        bDescriptorType        36
+        bDescriptorSubtype      4 (MIXER_UNIT)
+        bUnitID                13
+        bNrInPins               2
+        baSourceID(0)          10
+        baSourceID(1)          12
+        bNrChannels             6
+        bmChannelConfig    0x00000000
+        iChannelNames          16 Main Output L
+        bmMixerControls(0)   0x00
+        bmControls           0x00
+        iMixer                  0 
+      Warning: Junk at end of descriptor (4 bytes):
+        00 00 01 00 
+      AudioControl Interface Descriptor:
+        bLength                12
+        bDescriptorType        36
+        bDescriptorSubtype      3 (OUTPUT_TERMINAL)
+        bTerminalID            22
+        wTerminalType      0x0101 USB Streaming
+        bAssocTerminal          0
+        bSourceID              11
+        bCSourceID             42
+        bmControls         0x0000
+        iTerminal               4 Output
+      Endpoint Descriptor:
+        bLength                 7
+        bDescriptorType         5
+        bEndpointAddress     0x84  EP 4 IN
+        bmAttributes            3
+          Transfer Type            Interrupt
+          Synch Type               None
+          Usage Type               Data
+        wMaxPacketSize     0x0040  1x 64 bytes
+        bInterval               1
+    Interface Descriptor:
+      bLength                 9
+      bDescriptorType         4
+      bInterfaceNumber        1
+      bAlternateSetting       0
+      bNumEndpoints           0
+      bInterfaceClass         1 Audio
+      bInterfaceSubClass      2 Streaming
+      bInterfaceProtocol     32 
+      iInterface              8 KA6 Audio Out
+    Interface Descriptor:
+      bLength                 9
+      bDescriptorType         4
+      bInterfaceNumber        1
+      bAlternateSetting       1
+      bNumEndpoints           2
+      bInterfaceClass         1 Audio
+      bInterfaceSubClass      2 Streaming
+      bInterfaceProtocol     32 
+      iInterface              9 Audio Out Alt
+      AudioStreaming Interface Descriptor:
+        bLength                16
+        bDescriptorType        36
+        bDescriptorSubtype      1 (AS_GENERAL)
+        bTerminalLink           2
+        bmControls           0x00
+        bFormatType             1
+        bmFormats          0x00000001
+          PCM
+        bNrChannels             6
+        bmChannelConfig    0x00000000
+        iChannelNames          16 Main Output L
+      AudioStreaming Interface Descriptor:
+        bLength                 6
+        bDescriptorType        36
+        bDescriptorSubtype      2 (FORMAT_TYPE)
+        bFormatType             1 (FORMAT_TYPE_I)
+        bSubslotSize            4
+        bBitResolution         24
+      Endpoint Descriptor:
+        bLength                 7
+        bDescriptorType         5
+        bEndpointAddress     0x01  EP 1 OUT
+        bmAttributes            5
+          Transfer Type            Isochronous
+          Synch Type               Asynchronous
+          Usage Type               Data
+        wMaxPacketSize     0x0168  1x 360 bytes
+        bInterval               1
+        AudioStreaming Endpoint Descriptor:
+          bLength                 8
+          bDescriptorType        37
+          bDescriptorSubtype      1 (EP_GENERAL)
+          bmAttributes         0x00
+          bmControls           0x00
+          bLockDelayUnits         2 Decoded PCM samples
+          wLockDelay         0x0008
+      Endpoint Descriptor:
+        bLength                 7
+        bDescriptorType         5
+        bEndpointAddress     0x81  EP 1 IN
+        bmAttributes           17
+          Transfer Type            Isochronous
+          Synch Type               None
+          Usage Type               Feedback
+        wMaxPacketSize     0x0004  1x 4 bytes
+        bInterval               4
+    Interface Descriptor:
+      bLength                 9
+      bDescriptorType         4
+      bInterfaceNumber        2
+      bAlternateSetting       0
+      bNumEndpoints           0
+      bInterfaceClass         1 Audio
+      bInterfaceSubClass      2 Streaming
+      bInterfaceProtocol     32 
+      iInterface             10 KA6 Audio In
+    Interface Descriptor:
+      bLength                 9
+      bDescriptorType         4
+      bInterfaceNumber        2
+      bAlternateSetting       1
+      bNumEndpoints           1
+      bInterfaceClass         1 Audio
+      bInterfaceSubClass      2 Streaming
+      bInterfaceProtocol     32 
+      iInterface             11 Audio In Alt
+      AudioStreaming Interface Descriptor:
+        bLength                16
+        bDescriptorType        36
+        bDescriptorSubtype      1 (AS_GENERAL)
+        bTerminalLink          22
+        bmControls           0x00
+        bFormatType             1
+        bmFormats          0x00000001
+          PCM
+        bNrChannels             6
+        bmChannelConfig    0x00000000
+        iChannelNames          28 Input 1 L
+      AudioStreaming Interface Descriptor:
+        bLength                 6
+        bDescriptorType        36
+        bDescriptorSubtype      2 (FORMAT_TYPE)
+        bFormatType             1 (FORMAT_TYPE_I)
+        bSubslotSize            4
+        bBitResolution         24
+      Endpoint Descriptor:
+        bLength                 7
+        bDescriptorType         5
+        bEndpointAddress     0x82  EP 2 IN
+        bmAttributes            5
+          Transfer Type            Isochronous
+          Synch Type               Asynchronous
+          Usage Type               Data
+        wMaxPacketSize     0x0168  1x 360 bytes
+        bInterval               1
+        AudioStreaming Endpoint Descriptor:
+          bLength                 8
+          bDescriptorType        37
+          bDescriptorSubtype      1 (EP_GENERAL)
+          bmAttributes         0x00
+          bmControls           0x00
+          bLockDelayUnits         2 Decoded PCM samples
+          wLockDelay         0x0008
+    Interface Descriptor:
+      bLength                 9
+      bDescriptorType         4
+      bInterfaceNumber        3
+      bAlternateSetting       0
+      bNumEndpoints           2
+      bInterfaceClass         1 Audio
+      bInterfaceSubClass      3 MIDI Streaming
+      bInterfaceProtocol      0 
+      iInterface              0 
+      MIDIStreaming Interface Descriptor:
+        bLength                 7
+        bDescriptorType        36
+        bDescriptorSubtype      1 (HEADER)
+        bcdADC               1.00
+        wTotalLength       0x0041
+      MIDIStreaming Interface Descriptor:
+        bLength                 6
+        bDescriptorType        36
+        bDescriptorSubtype      2 (MIDI_IN_JACK)
+        bJackType               1 Embedded
+        bJackID                51
+        iJack                   0 
+      MIDIStreaming Interface Descriptor:
+        bLength                 6
+        bDescriptorType        36
+        bDescriptorSubtype      2 (MIDI_IN_JACK)
+        bJackType               2 External
+        bJackID                52
+        iJack                   0 
+      MIDIStreaming Interface Descriptor:
+        bLength                 9
+        bDescriptorType        36
+        bDescriptorSubtype      3 (MIDI_OUT_JACK)
+        bJackType               1 Embedded
+        bJackID                55
+        bNrInputPins            1
+        baSourceID( 0)         52
+        BaSourcePin( 0)         1
+        iJack                   0 
+      MIDIStreaming Interface Descriptor:
+        bLength                 9
+        bDescriptorType        36
+        bDescriptorSubtype      3 (MIDI_OUT_JACK)
+        bJackType               2 External
+        bJackID                56
+        bNrInputPins            1
+        baSourceID( 0)         51
+        BaSourcePin( 0)         1
+        iJack                   0 
+      Endpoint Descriptor:
+        bLength                 7
+        bDescriptorType         5
+        bEndpointAddress     0x83  EP 3 IN
+        bmAttributes            2
+          Transfer Type            Bulk
+          Synch Type               None
+          Usage Type               Data
+        wMaxPacketSize     0x0200  1x 512 bytes
+        bInterval               0
+        MIDIStreaming Endpoint Descriptor:
+          bLength                 5
+          bDescriptorType        37
+          bDescriptorSubtype      1 (GENERAL)
+          bNumEmbMIDIJack         1
+          baAssocJackID( 0)      55
+      Endpoint Descriptor:
+        bLength                 7
+        bDescriptorType         5
+        bEndpointAddress     0x02  EP 2 OUT
+        bmAttributes            2
+          Transfer Type            Bulk
+          Synch Type               None
+          Usage Type               Data
+        wMaxPacketSize     0x0200  1x 512 bytes
+        bInterval               0
+        MIDIStreaming Endpoint Descriptor:
+          bLength                 5
+          bDescriptorType        37
+          bDescriptorSubtype      1 (GENERAL)
+          bNumEmbMIDIJack         1
+          baAssocJackID( 0)      51
+    Interface Descriptor:
+      bLength                 9
+      bDescriptorType         4
+      bInterfaceNumber        4
+      bAlternateSetting       0
+      bNumEndpoints           0
+      bInterfaceClass       254 Application Specific Interface
+      bInterfaceSubClass      1 Device Firmware Update
+      bInterfaceProtocol      1 
+      iInterface              0 
+      Device Firmware Upgrade Interface Descriptor:
+        bLength                             7
+        bDescriptorType                    33
+        bmAttributes                        7
+          Will Not Detach
+          Manifestation Tolerant
+          Upload Supported
+          Download Supported
+        wDetachTimeout                    250 milliseconds
+        wTransferSize                      64 bytes
+Device Qualifier (for other device speed):
+  bLength                10
+  bDescriptorType         6
+  bcdUSB               2.00
+  bDeviceClass          239 Miscellaneous Device
+  bDeviceSubClass         2 
+  bDeviceProtocol         1 Interface Association
+  bMaxPacketSize0        64
+  bNumConfigurations      1
+Device Status:     0x0000
+  (Bus Powered)
